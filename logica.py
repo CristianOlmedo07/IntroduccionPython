@@ -1,7 +1,6 @@
 #un cajero automatico
 
-from usuario import usuario
-
+usuario = list()
 
 usuario.append("Cristian Olmedo")
 usuario.append("1234")
@@ -25,12 +24,15 @@ usuario2.append("Cristian.O")
 usuario2.append("12345")
 usuario2.append(3400)
 
-def registrar(nombre,password):
+def registrar():
     usuarioRegistrado = list()
     usuarioC = input("Ingrese su nombre:")
-    usuarioRegistrado.input("Igrese su password: ")
+    usuarioRegistrado = input("Igrese su password: ")
 
     if usuarioC == usuario[0] and usuarioRegistrado == usuario [1]:
         print("bienvenido al cagero automatico")
+        return registrar()
+    else:
+        print("Usuartio o contraseña incorrecta")
         return registrar()
 

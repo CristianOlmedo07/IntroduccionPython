@@ -1,5 +1,5 @@
 import logica
-ejecutar = logica.regitrar()
+ejecutar = logica.registrar()
 
 
 
